@@ -1,5 +1,5 @@
 /*
-  ***  Lab 0 ***
+  ***  Lab 1 ***
   Familiarize yourself with the workflow to modify, compile,
   and execute source files on a Linux environment.
   This lab also will preview some of the major concepts we
