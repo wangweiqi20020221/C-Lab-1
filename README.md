@@ -25,7 +25,7 @@ git clone
 
 #### Editing Code
 
-After acquiring the source file, you will need to open `lab0.c` in your [text editor](../linux/#edit) of choice. See the tutorials if you are unsure how to make edits.
+After acquiring the source file, you will need to open `lab0.c` in your [emacs editor](https://www.cs.sfu.ca/~ashriram/Courses/CS295/assets/global/cheat-editor.pdf) of choice. See the tutorials if you are unsure how to make edits.
 
 The `lab0.c` file contains a number of comments explaining some basics of C (and their differences from Java). There are five different parts to this lab and you will need to modify or write some lines of code for each one. We recommend keeping a fresh copy of `lab0.c` around for reference (as you may lose track of all the changes you end up making).
 
@@ -35,7 +35,7 @@ In particular, it will be helpful for this lab (and for using C moving forward) 
 
 #### Compiling Code
 
-The source file `lab0.c` won't do anything by itself; you need a compiler (specifically the GNU C compiler) to generate to an executable from it. The GNU C compiler is available on the [CSE VM](https://www.cs.washington.edu/lab/vms), attu, and the instructional Linux machines in the lab.
+The source file `lab0.c` won't do anything by itself; you need a compiler (specifically the GNU C compiler) to generate to an executable from it. The GNU C compiler is available on the instructional Linux machines in the lab.
 
 Using any one of these machines, open a terminal and execute `gcc -v`. We see:
 
@@ -91,14 +91,13 @@ x & x = 351
 
 #### Checking Your Work
 
-With that, you should have everything you need to complete the assignment. Follow the instructions found on the associated Gradescope quiz; you will want to work on the different parts of the lab in order (from 1 to 5). Each question can be answered and/or verified by appropriate edits to the source code. Note that every time you want to test a code modification, you will need to use the `gcc -g -Wall -std=c99 -o lab0 lab0.c` command to produce an updated `lab0` executable file (**Tip:** Use the up and down keys to scroll through previous terminal commands you've executed).
+With that, you should have everything you need to complete the assignment. Show your code to the TA; you will want to work on the different parts of the lab in order (from 1 to 5). Each question can be answered and/or verified by appropriate edits to the source code. Note that every time you want to test a code modification, you will need to use the `gcc -g -Wall -std=c99 -o lab0 lab0.c` command to produce an updated `lab0` executable file (**Tip:** Use the up and down keys to scroll through previous terminal commands you've executed).
 
-You can submit each question individually on the Lab 0 submission page in Gradescope. Gradescope will indicate which questions were answered correctly and which were answered incorrectly. You have unlimited tries for each question in this lab.
-
+You can submit each question individually on the Lab 0 submission page in your report coursys. 
 Most of the code behaviors will seem inexplicable at this point, but our goal is that you will be able to explain to someone else what is going on by the end of this course! =)
 
   
 
 ### Submission
 
-You will not be submitting files for this lab. Submit your answers to github.
+You will not be submitting files for this lab. Submit your answers to coursys.
