@@ -7,7 +7,7 @@
 *   Observe C programming behaviors that will preview the topics covered in the later labs.
 
 Be sure to read the [ ![](../images/icon_txt.png) Linux tips](../linux/) page to set up your environment and pick a text editor before starting this lab.  
-Instructions on what to do are in the Gradescope quiz along with comments in the starter code.
+Instructions on what to do are in the Cavas quiz along with comments in the starter code.
 
   
 
@@ -25,7 +25,7 @@ git clone
 
 #### Editing Code
 
-After acquiring the source file, you will need to open `lab0.c` in your [emacs editor](https://www.cs.sfu.ca/~ashriram/Courses/CS295/assets/global/cheat-editor.pdf) of choice. See the tutorials if you are unsure how to make edits.
+After acquiring the source file, you will need to open `lab1.c` in your [emacs editor](https://www.cs.sfu.ca/~ashriram/Courses/CS295/assets/global/cheat-editor.pdf) of choice. See the tutorials if you are unsure how to make edits.
 
 The `lab0.c` file contains a number of comments explaining some basics of C (and their differences from Java). There are five different parts to this lab and you will need to modify or write some lines of code for each one. We recommend keeping a fresh copy of `lab0.c` around for reference (as you may lose track of all the changes you end up making).
 
@@ -49,13 +49,13 @@ Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortra
 Thread model: posix
 gcc version 7.3.1 20180303 (Red Hat 7.3.1-5) (GCC)
 ```
-The output tells me a bunch of the configuration options for the my installation of GCC as well as the version number, which is 7.3.1. Assuming that you have saved `lab0.c` somewhere on your machine, navigate to that directory and then use GCC to compile it with the following command:
+The output tells me a bunch of the configuration options for the my installation of GCC as well as the version number, which is 7.3.1. Assuming that you have saved `lab1.c` somewhere on your machine, navigate to that directory and then use GCC to compile it with the following command:
 
 ```
-$ gcc -g -Wall -std=c99 -o lab0 lab0.c
+$ gcc -g -Wall -std=c99 -o lab1.bin lab0.c
 ```
 
-It's not that important right now for you to know what all of these options do, but `-g` tells the compiler to include debugging symbols, `-Wall` says to print warnings for all types of potential problems, `-std=c99` says to use the C99 standard (now only 19 years old!), `-o lab0` instructs the compiler to output the executable code to a file called `lab0`, and `lab0.c` is the source file being compiled.
+It's not that important right now for you to know what all of these options do, but `-g` tells the compiler to include debugging symbols, `-Wall` says to print warnings for all types of potential problems, `-std=c99` says to use the C99 standard (now only 19 years old!), `-o lab0` instructs the compiler to output the executable code to a file called `lab0`, and `lab1.c` is the source file being compiled.
 
 During execution of that command, you can safely ignore warning about unused variables if you haven't made any changes yet. This warning would not be shown if you removed `-Wall` from the `gcc` command, but you will want `-Wall` to catch potential errors when you write code yourself.
 
@@ -63,24 +63,24 @@ Having executed the `gcc` command, you should be able to see a file named `lab0`
 
 ```
 $ ls
-lab0  lab0.c
+lab1  lab1.c
 ```
   
 
 #### Running Executables
 
-The `lab0` file is an _executable file_, which you can run using the command `./lab0`. You should see:
+The `lab1` file is an _executable file_, which you can run using the command `./lab1.bin`. You should see:
 
 ```
-$ ./lab0
-Usage: ./lab0 <num>
+$ ./lab1.bin
+Usage: ./lab1.bin <num>
 ```
 
 In this case, the executable `lab0` is expecting a _command-line argument_, which is text that is provided to the executable from the command-line when the program is run. In particular, `lab0` wants a number from 1 to 5, corresponding to which part of the lab code you want to run. See `main()` in `lab0.c` for more details. For example (your values of `p` and `q` may differ):
 
 ```
-$ ./lab0 1
-\*\*\* LAB 0 PART 1 \*\*\*
+$ ./lab1.bin 1
+\*\*\* LAB 1 PART 1 \*\*\*
 x = 351
 y = 410
 p = 0x7fffaec6a2ec
@@ -91,7 +91,7 @@ x & x = 351
 
 #### Checking Your Work
 
-With that, you should have everything you need to complete the assignment. Show your code to the TA; you will want to work on the different parts of the lab in order (from 1 to 5). Each question can be answered and/or verified by appropriate edits to the source code. Note that every time you want to test a code modification, you will need to use the `gcc -g -Wall -std=c99 -o lab0 lab0.c` command to produce an updated `lab0` executable file (**Tip:** Use the up and down keys to scroll through previous terminal commands you've executed).
+With that, you should have everything you need to complete the assignment. Show your code to the TA; you will want to work on the different parts of the lab in order (from 1 to 5). Each question can be answered and/or verified by appropriate edits to the source code. Note that every time you want to test a code modification, you will need to use the `gcc -g -Wall -std=c99 -o lab1.bin lab1.c` command to produce an updated `lab1.bin` executable file (**Tip:** Use the up and down keys to scroll through previous terminal commands you've executed).
 
 You can submit each question individually on the Lab 0 submission page in your report coursys. 
 Most of the code behaviors will seem inexplicable at this point, but our goal is that you will be able to explain to someone else what is going on by the end of this course! =)
@@ -100,4 +100,4 @@ Most of the code behaviors will seem inexplicable at this point, but our goal is
 
 ### Submission
 
-You will not be submitting files for this lab. Submit your answers to coursys.
+You will not be submitting files for this lab. Submit your answers to Canvas.
