@@ -88,7 +88,6 @@ int insert_after(struct list *l, struct node *n, int val)
     return 0;
   m->val = val;
   m->next = n->next;
-  m->prev = n;
   if (l->last == n)
     l->last = m;
   else
