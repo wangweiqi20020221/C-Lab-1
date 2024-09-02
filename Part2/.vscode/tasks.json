@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "make listtest1",
+            "type": "shell",
+            "command": "make",
+            "args": ["listtest1"],
+            "detail": "Builds the listtest1 target using the Makefile."
+        },
+        {
+            "label": "make listtest2",
+            "type": "shell",
+            "command": "make",
+            "args": ["listtest2"],
+            "detail": "Builds the listtest2 target using the Makefile."
+        },
+        {
+            "label": "Clean",
+            "type": "shell",
+            "command": "make",
+            "args": ["clean"],
+            "detail": "Cleans the build files using the Makefile."
+        }
+    ]
+}

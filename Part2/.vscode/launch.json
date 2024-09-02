@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug listtest1",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/listtest1",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "MIMode": "lldb",
+            "preLaunchTask": "make listtest1"
+        },
+        {
+            "name": "Debug listtest2",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/listtest2",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "MIMode": "lldb",
+            "preLaunchTask": "make listtest2"
+        },
+        
+    ]
+}
