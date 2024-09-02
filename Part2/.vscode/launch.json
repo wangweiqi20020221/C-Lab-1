@@ -9,7 +9,7 @@
             "args": [],
             "stopAtEntry": true,
             "cwd": "${workspaceFolder}",
-            "MIMode": "lldb",
+            "MIMode": "gdb",
             "preLaunchTask": "make listtest1"
         },
         {
@@ -20,7 +20,7 @@
             "args": [],
             "stopAtEntry": true,
             "cwd": "${workspaceFolder}",
-            "MIMode": "lldb",
+            "MIMode": "gdb",
             "preLaunchTask": "make listtest2"
         },
         
